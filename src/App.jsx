@@ -1,5 +1,7 @@
+import TopNavBar from "./components/navigation/TopNavBar"
+
 function App() {
-  return;
+  return <TopNavBar/>
 }
 
 export default App

@@ -2,12 +2,10 @@
 
 @theme {
 
-  /* Primary Neutrals (Black & White) */
   --color-nike-black: #111111;
   --color-nike-white: #ffffff;
   --color-nike-off-white: #f5f5f5;
 
-  /* Gray Scale (for backgrounds, borders, text) */
   --color-nike-gray-50: #fafafa;
   --color-nike-gray-100: #f5f5f5;
   --color-nike-gray-200: #e5e5e5;
@@ -15,15 +13,13 @@
   --color-nike-gray-500: #737373;
   --color-nike-gray-900: #171717;
 
-  /* Accent Colors (Nike often uses vibrant accents) */
   --color-nike-red: #e01e3f;
   --color-nike-cyan: #00a2b4;
   --color-nike-lime: #8dc63f;
 
   --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif; 
 
-  --spacing-18: 4.5rem; /* 72px */
-  --spacing-22: 5.5rem; /* 88px */
+
 }
 
 @layer base {
