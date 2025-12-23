@@ -1,12 +1,29 @@
+import TopBar from './components/layout/TopBar'
+import Header from './components/layout/Header'
+import MobileMenu from "./components/navigation/MobileMenu";
 
-import TopNavBar from "./components/navigation/TopNavBar"
-import NavBar from './components/navigation/NavBar'
+import { useState } from "react";
+
 
 function App() {
+  const [activeMenu, setActiveMenu] = useState(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <>
-      <TopNavBar />
-      <NavBar/>
+      <div className=" w-full bg-white">
+        <TopBar />
+        <Header
+          activeMenu={activeMenu}
+          setActiveMenu={setActiveMenu}
+          mobileMenuOpen={mobileMenuOpen}
+          setMobileMenuOpen={setMobileMenuOpen}
+        />
+        <MobileMenu
+          isOpen={mobileMenuOpen}
+          onClose={() => setMobileMenuOpen(false)}
+        />
+      </div>
     </>
   );
 }

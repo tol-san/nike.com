@@ -1,15 +1,16 @@
-import { Search } from "lucide-react";
+import { Search } from 'lucide-react';
 
 const SearchBar = () => {
   return (
-    <div className=" relative">
-      <div>
-        <Search className=" absolute -translate-y-1/2 top-1/2 text-gray-500 p-1.5 rounded-full group-hover:bg-white h-9 w-9" />
-        <input placeholder="Search" type="text" className="text-lg bg-gray-200/90  p-1 rounded-full pl-10"/>
-
-      </div>
+    <div className="hidden md:flex items-center bg-gray-100 rounded-full px-4 py-2">
+      <Search className="w-5 h-5 text-gray-600" />
+      <input
+        type="text"
+        placeholder="Search"
+        className="bg-transparent border-none outline-none ml-2 w-40"
+      />
     </div>
   );
-};
+}
 
-export default SearchBar;
+export default SearchBar
