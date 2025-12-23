@@ -11,7 +11,7 @@ const Header = ({
 }) => {
   return (
     <header className="relative bg-white border-b">
-      <div className="px-6 py-4">
+      <div className="px-6 py-1">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <NikeLogo />

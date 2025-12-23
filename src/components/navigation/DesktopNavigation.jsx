@@ -9,7 +9,7 @@ const DesktopNavigation = ({ activeMenu, setActiveMenu }) => {
       {navItems.map((item) => (
         <button
           key={item}
-          className="text-base font-medium hover:border-b-2 border-black pb-6 -mb-4 transition-all"
+          className="text-base font-medium hover:border-b-2 border-black  -mb-4 transition-all"
           onMouseEnter={() => {
               const key = item.toLowerCase();
             if (menuData[key]) setActiveMenu(key);

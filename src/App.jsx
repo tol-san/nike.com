@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <div className=" w-full bg-white">
-        <TopBar />
+        <TopBar/>
         <Header
           activeMenu={activeMenu}
           setActiveMenu={setActiveMenu}

@@ -1,8 +1,7 @@
-import React from 'react'
 
 const TopBar = () => {
   return (
-    <div className="bg-gray-100 px-6 py-2 text-xs flex justify-between items-center">
+    <div className="bg-gray-100 px-6 py-2 text-xs md:flex justify-between items-center hidden ">
       <div className="flex gap-4">
         <a href="#" className="hover:text-gray-600">
           Find a Store
